@@ -1,0 +1,291 @@
+@import "reset.css";
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.anim_bills  {
+  background-image: url(../img/wallpaper.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  overflow: hidden;
+  overflow-y: hidden;
+   /* Путь к фоновому изображению */
+  /*background-size: contain;*/
+  height: 100vh;
+}
+
+.blue__adress {
+    transform: translate(11.5vw, 62vh);
+}
+
+.blue__adress__square {
+    width: 8.8vw;
+    height: 8.8vw;
+}
+
+.blue__adress__img {
+    position: absolute;
+    width: 9vw;
+    top: -23%;
+    left: 56%;
+    animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.sticker_star {
+  position: relative;
+}
+.star {
+  position: absolute;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+}
+
+.bills {
+  position: absolute;
+}
+
+.pineapple {
+  top: -77vw;
+  height: 222vh;
+  wid th: 192vw;
+  /* right: -118vw; */
+  position: relative;
+}
+
+.mango {
+  height: 216vh;
+  width: 88vw;
+  /* right: 26vw; */
+  top: -271vh;
+  left: -20vw;
+  z-index: -1;
+  position: relative;
+}
+
+.kiwi {
+  top: -426vw;
+  transform: rotate(-69deg);
+  right: -4vw;
+  position: relative;
+  z-index: 1;
+}
+
+.iphone_8 {
+display: none;
+}
+/*
+@media (min-width: 320px) {
+
+  body {
+    height:
+  }
+ .bills {
+	display: none;
+ }
+ .sticker_star {
+   display: none;
+ }
+}
+*/
+
+
+@med ia (max-width: 414px) {
+
+
+main {
+  overflow-x: hidden;
+  /*height: 667px;*/
+  background-attach ment: fixed;
+
+}
+
+ .bills {
+	display: none;
+ }
+
+ .sticker_star {
+   display: none;
+ }
+
+ .iphone_bills {
+   position: relative;
+ }
+
+ .iphone_8 {
+   display: block;
+   z-index: 1;
+   height: 400vw;
+   width: 70vw;
+   position: absolute;
+   right: 16vw;
+ }
+}
+
+@med ia (max-width: 415px) {
+
+  .pineapple {
+    height: 144vh;
+    width: 165vw;
+    top: -114vw;
+    right: -74vw;
+    z-index: -1;
+    position: absolute;
+}
+
+.mango {
+    height: 145vh;
+    width: 71vw;
+    top: -114vw;
+    right: 8vw;
+    z-index: -1;
+    position: absolute;
+}
+
+.kiwi {
+    height: 229vh;
+    width: 366vw;
+    top: -153vw;
+    right: -28vw;
+    z-index: -1;
+    position: absolute;
+}
+
+.iphone_bills {
+  display: none;
+}
+
+}
+
+@me dia (max-width 680px) {
+ .pineapple {
+   height: 180vh;
+   width: 165vw;
+   top: -109vw;
+   right: - 62vw;
+ }
+ .kiwi {
+   height: 229vh;
+   width: 313vw;
+   top: -141vw;
+   right: -11vw;
+   transform: rotate(-2deg);
+ }
+}
+@med ia (max-width: 768px) {
+  .pineapple {
+    top: -96vw;
+  }
+  .mango {
+    height: 187vh;
+    width: 91vw;
+    top: -114vw;
+    right: -3vw;
+  }
+  .kiwi {
+    height: 160vh;
+    width:236vw;
+    top: -144vw;
+    right: -27vw;
+  }
+}
+  @me dia (max-width: 834px) {
+  .kiwi {
+   height: 226vh;
+   width: 301vw;
+   top: -77vw;
+   transform: rotate(-10deg);
+   right: -33vw
+    }
+  }
+
+  @me dia (max-width 1478px) {
+
+    .mango {
+      height: 281vh;
+      width: 151vw;
+      top: -114vw;
+      right: -30vw;
+      scroll-snap-type
+    }
+
+    }
+    .pineapple {
+      top: -77vw;
+      height: 194vh;
+      width: 192vw;
+      right: -118vw;
+    }
+    .kiwi {
+      height: 226vh;
+      width: 301vw;
+      top: -77vw;
+      transform: rotate(-10deg);
+      right: -33vw;
+    }
+  }
+
+@med ia (max-width 1068px) {
+  .pineapple {
+    top: -18vw;
+    height: 163vh;
+    width: 159vw;
+    right: -55vw;
+  }
+  .mango {
+    height: 281vh;
+    width: 88vw;
+    top: -114vw;
+    right: 1vw;
+  }
+  .kiwi {
+    height: 212vh;
+    width: 200vw;
+    top: -61vw;å
+  }
+}
+
+@medi a (min-width: 2880px) {
+
+  .pineapple {
+    top: -27vw;
+    height: 194vh;
+    width: 148vw;
+    right: -74vw;
+  }
+  .mango {
+    height: 281vh;
+    width: 88vw;
+    top: -114vw;
+    right: -25vw;
+  }
+  .kiwi {
+    height: 226vw;
+    width: 202vw;
+    top: -46vw;
+    right: -2vw;
+    transform: rotate (-1deg);
+  }
+}

@@ -11,253 +11,83 @@ html {
   overflow-y: hidden;
 }
 
-body {
-  background-image: url(../img/wallpaper.jpg);
+body  {
+  /*background-image: url(../img/wallpaper.jpg);*/
+  background-color: #F7FAE1;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 main {
-  overflo w: hidden;
-  overfl ow-y: hidden;
+  overflow: hidden;
+  overflow-y: hidden;
    /* Путь к фоновому изображению */
   /*background-size: contain;*/
   height: 100vh;
-
-
 }
 
-.sticker_star {
-  position: relative;
-}
-.star {
-  position: absolute;
+.wrapper {
+  width: 100vw;
+  height: 100vh;
 }
 
-.bills {
-  position:relative;
+.running_news {
+  width: auto;
+  height: auto;
+  padding: 4rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.pineapple {
-  height: 208vh;
-  width: 110vw;
-  top: -114vw;
-  right: -28vw;
-  z-index: -1;
-  position: absolute;
+.top_news,
+.bottom_news {
+  height: 6vh;
+  background: #F0CD2A;
+  z-index: 1;
+  justify-content: space-between;
 }
 
-.mango {
-  height: 216vh;
-  width: 46vw;
-  top: -114vw;
-  right: 30vw;
-  z-index: -1;
-  position: absolute;
+.bottom_news  {
+    margin-top: 37rem;
+    width: auto;
 }
 
-.kiwi {
-  height: 229vh;
-  width: 143vw;
-  top: -126vw;
-  right: 19vw;
-  z-index: -1;
-  position: absolute;
+h2 {
+font-family: Input Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 101.5%;
+letter-spacing: -0.08em;
+color: #E23C2C;
 }
 
-.iphone_8 {
-display: none;
+a.tap_on {
+color: #E23C2C;
+padding: 0rem 11rem;
+text-decoration: none;
+-webkit-animation: pulsate 3s ease-out;
+-webkit-animation-iteration-count: infinite;
+opacity: ;
 }
-/*
-@media (min-width: 320px) {
-
-  body {
-    height:
-  }
- .bills {
-	display: none;
- }
- .sticker_star {
-   display: none;
- }
-}
-*/
-
-
-@media (max-width: 414px) {
-
-
-main {
-  overflow-x: hidden;
-  /*height: 667px;*/
-  background-attach ment: fixed;
-
-}
-
- .bills {
-	display: none;
- }
-
- .sticker_star {
-   display: none;
- }
-
- .iphone_bills {
-   position: relative;
- }
-
- .iphone_8 {
-   display: block;
-   z-index: 1;
-   height: 400vw;
-   width: 70vw;
-   position: absolute;
-   right: 16vw;
- }
-}
-
-@media (min-width: 415px) {
-
-  .pineapple {
-    height: 144vh;
-    width: 165vw;
-    top: -114vw;
-    right: -74vw;
-    z-index: -1;
-    position: absolute;
-}
-
-.mango {
-    height: 145vh;
-    width: 71vw;
-    top: -114vw;
-    right: 8vw;
-    z-index: -1;
-    position: absolute;
-}
-
-.kiwi {
-    height: 229vh;
-    width: 366vw;
-    top: -153vw;
-    right: -28vw;
-    z-index: -1;
-    position: absolute;
-}
-
-.iphone_bills {
-  display: none;
-}
-
-}
-
-@media (max-width 680px) {
- .pineapple {
-   height: 180vh;
-   width: 165vw;
-   top: -109vw;
-   right: - 62vw;
- }
- .kiwi {
-   height: 229vh;
-   width: 313vw;
-   top: -141vw;
-   right: -11vw;
-   transform: rotate(-2deg);
- }
-}
-@media (max-width: 768px) {
-  .pineapple {
-    top: -96vw;
-  }
-  .mango {
-    height: 187vh;
-    width: 91vw;
-    top: -114vw;
-    right: -3vw;
-  }
-  .kiwi {
-    height: 160vh;
-    width:236vw;
-    top: -144vw;
-    right: -27vw;
-  }
-}
-  @media (max-width: 834px) {
-  .kiwi {
-   height: 226vh;
-   width: 301vw;
-   top: -77vw;
-   transform: rotate(-10deg);
-   right: -33vw
+@keyframes pulsate {
+    0% {
+       opacity: 0.1;
+   }
+    20% {
+       opacity: 1.0;
+   }
+    40% {
+        opacity: 0.1;
     }
-  }
-
-  @media (min-width 1478px) {
-
-    .mango {
-      height: 281vh;
-      width: 151vw;
-      top: -114vw;
-      right: -30vw;
-      scroll-snap-type
+    60% {
+        opacity: 1.0;
     }
-
-    }
-    .pineapple {
-      top: -77vw;
-      height: 194vh;
-      width: 192vw;
-      right: -118vw;
-    }
-    .kiwi {
-      height: 226vh;
-      width: 301vw;
-      top: -77vw;
-      transform: rotate(-10deg);
-      right: -33vw;
-    }
+    80% {
+         opacity: 0.1;
+     }
+   100% {
+       opacity: 0.1;
+   }
   }
-
-@media (max-width 1068px) {
-  .pineapple {
-    top: -18vw;
-    height: 163vh;
-    width: 159vw;
-    right: -55vw;
-  }
-  .mango {
-    height: 281vh;
-    width: 88vw;
-    top: -114vw;
-    right: 1vw;
-  }
-  .kiwi {
-    height: 212vh;
-    width: 200vw;
-    top: -61vw;å
-  }
-}
-
-@media (max-width: 2880px) {
-
-  .pineapple {
-    top: -27vw;
-    height: 194vh;
-    width: 148vw;
-    right: -74vw;
-  }
-  .mango {
-    height: 281vh;
-    width: 88vw;
-    top: -114vw;
-    right: -25vw;
-  }
-  .kiwi {
-    height: 226vw;
-    width: 202vw;
-    top: -46vw;
-    right: -2vw;
-    transform: rotate (-1deg);
-  }
-}
