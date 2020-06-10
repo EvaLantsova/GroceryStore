@@ -53,6 +53,83 @@ main {
     width: auto;
 }
 
+.super_stickers {
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: 4rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.apple_sticker {
+      position: absolute;
+      top: -32vh;
+      left: 12vw;
+      transform: rotate(-28deg)
+}
+.pineapple_sticker {
+  position: absolute;
+  top: -35vh;
+  left: 16vw;
+  transform: rotate(15deg);
+}
+
+.blue_kiwi_sticker {
+    left: 32vw;
+    top: -33vh;
+    position: absolute;
+}
+
+.green_kiwi_sticker {
+  position: absolute;
+  top: -20vh;
+  left: 4vw;
+  animation: morphingRect 1.5s ease infinite;
+  animation-delay: -0.3s;
+  width: 18vw;
+  height: 15vh;
+}
+
+@keyframes morphingRect {
+  0% {
+      border-radius: 0%;
+      width: 18vw;
+      height: 17vh;
+  }
+  50% {
+      border-radius: 50%;
+      width: 18vw;
+      height: 20vh;
+  }
+  100% {
+    border-radius: 0%;
+    width: 18vw;
+    height: 17vh;
+  }
+}
+
+
+.horizontal_banana_sticker {
+    top: -27vh;
+    left: 7vw;
+    position: absolute;
+}
+
+
+.vertical_banana_sticker {
+   top: -12vh;
+   left: 34vw;
+   position: absolute;
+   transform: rotate(-24deg);
+}
+.running_news,
+.super_stickers {
+  display:block;
+  position: relative;
+}
+
 h2 {
 font-family: Input Sans;
 font-style: normal;
