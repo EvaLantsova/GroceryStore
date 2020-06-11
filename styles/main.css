@@ -53,6 +53,10 @@ main {
     width: auto;
 }
 
+.text_center {
+  text-align: center;
+}
+
 .super_stickers {
   position: relative;
   width: auto;
@@ -64,35 +68,129 @@ main {
 }
 
 .apple_sticker {
-      position: absolute;
-      top: -32vh;
-      left: 12vw;
-      transform: rotate(-28deg)
-}
-.pineapple_sticker {
   position: absolute;
-  top: -35vh;
-  left: 16vw;
-  transform: rotate(15deg);
+  top: -48vh;
+  left: 9vw;
+  transform: rotate(-28deg);
+  display: block;
+  repeat: no-repeat 50% 50%;
+  animation: morphingRect1 1.5s ease infinite;
+  animation-delay: -0.3s;
+  }
+
+/*.apple_sticker:hover {
+/*  position: relative;*/
+/*  margin: 0 auto;
+opacity: 0;
+} */
+
+.apple_sticker img {
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
-.blue_kiwi_sticker {
-    left: 32vw;
-    top: -33vh;
-    position: absolute;
+.real_apple {
+  opacity: 1;
 }
+
+.web_apple {
+  opacity: 0;
+  width: 20vw;
+  height: 20vh;
+}
+
+.web_apple:hover {
+  opacity: 100;
+}
+
+/*.web_apple:hover{
+  opacity: 1;
+}*/
+
+  @keyframes morphingRect1 {
+    0% {
+        border-radius: 0%;
+        width: 30vw;
+        height: 28vh;
+    }
+    50% {
+        border-radius: 50%;
+        width: 30vw;
+        height: 26vh;
+    }
+    100% {
+      border-radius: 0%;
+      width: 30vw;
+      height: 28vh;
+    }
+  }
+
+.pineapple_sticker {
+  position: absolute;
+  top: -39vh;
+  left: 11vw;
+  transform: rotate(15deg);
+  animation: morphingRect0 1.5s ease infinite;
+  animation-delay: -0.3s;
+}
+
+@keyframes morphingRect0 {
+  0% {
+      border-radius: 0%;
+      width: 38vw;
+      height: 25vh;
+  }
+  50% {
+      border-radius: 50%;
+      width: 38vw;
+      height: 22vh;
+  }
+  100% {
+    border-radius: 0%;
+    width: 38vw;
+    height: 25vh;
+  }
+}
+
+
+.blue_kiwi_sticker {
+  left: 29vw;
+  top: -43vh;
+  position: absolute;
+  transform: rotate(13deg);
+  animation: morphingRect3 1.5s ease infinite;
+  animation-delay: -0.3s;
+  }
+
+  @keyframes morphingRect3 {
+    0% {
+        border-radius: 0%;
+        width: 30vw;
+        height: 28vh;
+    }
+    50% {
+        border-radius: 50%;
+        width: 30vw;
+        height: 26vh;
+    }
+    100% {
+      border-radius: 0%;
+      width: 30vw;
+      height: 28vh;
+    }
+  }
+
 
 .green_kiwi_sticker {
   position: absolute;
-  top: -20vh;
+  top: -33vh;
   left: 4vw;
-  animation: morphingRect 1.5s ease infinite;
+  animation: morphingRect4 1.5s ease infinite;
   animation-delay: -0.3s;
-  width: 18vw;
-  height: 15vh;
 }
 
-@keyframes morphingRect {
+@keyframes morphingRect4 {
   0% {
       border-radius: 0%;
       width: 18vw;
@@ -112,10 +210,30 @@ main {
 
 
 .horizontal_banana_sticker {
-    top: -27vh;
-    left: 7vw;
+    top: -24vh;
+    left: 3vw;
     position: absolute;
-}
+    animation: morphingRect5 1.5s ease infinite;
+    animation-delay: -0.3s;
+  }
+
+  @keyframes morphingRect5 {
+    0% {
+        border-radius: 0%;
+        width: 90vw;
+        height: 35vh;
+    }
+    50% {
+        border-radius: 50%;
+        width: 90vw;
+        height: 33vh;
+    }
+    100% {
+      border-radius: 0%;
+      width: 90vw;
+      height: 35vh;
+    }
+  }
 
 
 .vertical_banana_sticker {
@@ -123,6 +241,30 @@ main {
    left: 34vw;
    position: absolute;
    transform: rotate(-24deg);
+   animation: morphingRect6 1.5s ease infinite;
+   animation-delay: -0.3s;
+   }
+
+   @keyframes morphingRect6 {
+     0% {
+         border-radius: 0%;
+         width: 30vw;
+         height: 28vh;
+     }
+     50% {
+         border-radius: 50%;
+         width: 30vw;
+         height: 26vh;
+     }
+     100% {
+       border-radius: 0%;
+       width: 30vw;
+       height: 28vh;
+     }
+   }
+
+.vertical_banana_sticker:hover {
+  opacity: 50%;
 }
 .running_news,
 .super_stickers {
@@ -134,7 +276,7 @@ h2 {
 font-family: Input Sans;
 font-style: normal;
 font-weight: bold;
-font-size: 48px;
+font-size:  4vw;
 line-height: 101.5%;
 letter-spacing: -0.08em;
 color: #E23C2C;
