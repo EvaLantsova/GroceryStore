@@ -74,7 +74,7 @@ main {
   transform: rotate(-28deg);
   display: block;
   repeat: no-repeat 50% 50%;
-  animation: morphingRect1 1.5s ease infinite;
+  animation: morphingRec t1 1.5s ease infinite;
   animation-delay: -0.3s;
   }
 
@@ -86,22 +86,25 @@ opacity: 0;
 
 .apple_sticker img {
   position: absolute;
-  left: 0;
-  right: 0;
+/*  left: 0;
+  right: 0; */
 }
 
-.real_apple {
+.real_a pple {
   opacity: 1;
 }
 
 .web_apple {
   opacity: 0;
-  width: 20vw;
-  height: 20vh;
+  width: 2s0vw;
+  height: 30vh;
 }
 
 .web_apple:hover {
   opacity: 100;
+}
+.real_apple:hover img{
+  opacity: 0;
 }
 
 /*.web_apple:hover{
@@ -138,17 +141,17 @@ opacity: 0;
 @keyframes morphingRect0 {
   0% {
       border-radius: 0%;
-      width: 38vw;
+      width: 30vw;
       height: 25vh;
   }
   50% {
       border-radius: 50%;
-      width: 38vw;
+      width: 30vw;
       height: 22vh;
   }
   100% {
     border-radius: 0%;
-    width: 38vw;
+    width: 30vw;
     height: 25vh;
   }
 }
@@ -184,7 +187,7 @@ opacity: 0;
 
 .green_kiwi_sticker {
   position: absolute;
-  top: -33vh;
+  top: -37vh;
   left: 4vw;
   animation: morphingRect4 1.5s ease infinite;
   animation-delay: -0.3s;
@@ -213,6 +216,8 @@ opacity: 0;
     top: -24vh;
     left: 3vw;
     position: absolute;
+    text-align: center;
+    align-items: center;
     animation: morphingRect5 1.5s ease infinite;
     animation-delay: -0.3s;
   }
@@ -233,6 +238,15 @@ opacity: 0;
       width: 90vw;
       height: 35vh;
     }
+  }
+
+  .imgBanana {
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 7%;
+  display: none;
   }
 
 

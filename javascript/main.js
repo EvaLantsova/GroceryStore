@@ -33,3 +33,21 @@ var image = document.getElementsByClassName('kiwi');
 new simpleParallax('kiwi', {
 	scale: 1.5
 });
+
+
+
+let btnMakeBananas = document.querySelector('.horizontal_banana_sticker')
+btnMakeBananas.onclick = function() {
+    let numberOfPictures = 100
+    for (let i = 0; i < numberOfBananas; i++) {
+        let imgBanana = document.createElement('img')
+        imgBanana.classList.toggle('imgBanana.png')
+        imgBanana.style.position = 'fixed'
+        imgBanana.style.transform = `translate(${anime.random(0,90)}vw, ${anime.random(0,100)}vh)`
+        document.body.append(imgBanana)
+
+        imgBanana.addEventListener('mouseenter', function() {
+            imgBanana.style.display = 'none';
+        });
+    }
+}
