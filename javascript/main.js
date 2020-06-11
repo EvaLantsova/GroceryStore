@@ -1,4 +1,4 @@
-let starsNumber = 10
+/*let starsNumber = 10
 let stickerStar = document.querySelector('.sticker_star')
 
 for (let i = 0; i < 10; i++) {
@@ -9,7 +9,7 @@ for (let i = 0; i < 10; i++) {
 	newStarImg.setAttribute('src', '../img/star2.svg');
 	}
 	newStarImg.style.transform = `translate(${anime.random(1,100)}vw, ${anime.random(1,100)}vh)`
-	stickerStar.append(newStarImg)
+	stickerStar.append("newStarImg")
 }
 
 let stars = document.querySelectorAll('.star')
@@ -21,7 +21,7 @@ stars.forEach(function(element) {
 
 let infiniteLoopAlternate = anime({
   targets: '.pineapple',
-  transl ateX: 250,
+  /*translateX: 250,
 	translateY: -250,
 	duration: 2000,
   direction: 'alternate',
@@ -33,7 +33,7 @@ var image = document.getElementsByClassName('kiwi');
 new simpleParallax('kiwi', {
 	scale: 1.5
 });
-
+*/
 
 
 let btnMakeBananas = document.querySelector('.horizontal_banana_sticker')
@@ -51,3 +51,23 @@ btnMakeBananas.onclick = function() {
         });
     }
 }
+
+$(document).ready(function(){
+
+$(".mymagicoverbox").click(function()
+{
+ $('#myfond_gris').fadeIn(300);
+ var iddiv = $(this).attr("iddiv");
+ $('#'+iddiv).fadeIn(300);
+ $('#myfond_gris').attr('opendiv',iddiv);
+ return false;
+});
+
+$('#myfond_gris, .mymagicoverbox_fermer').click(function()
+{
+ var iddiv = $("#myfond_gris").attr('opendiv');
+ $('#myfond_gris').fadeOut(300);
+ $('#'+iddiv).fadeOut(300);
+});
+
+});
