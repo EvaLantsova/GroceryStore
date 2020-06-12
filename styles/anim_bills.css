@@ -51,11 +51,18 @@ main {
     }
 }
 
-.sticker_star {
-  position: relative;
+#star_2 {
+height: 20vh;
+width: 20vw;
+display: none;
+position: absolute;
 }
-.star {
-  position: absolute;
+
+#star_3 {
+height: 20vh;
+width: 20vw;
+display: none;
+position: absolute;
 }
 
 .wrapper {
