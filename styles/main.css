@@ -26,6 +26,61 @@ main {
   height: 100vh;
 }
 
+.btn {
+  border: none;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+}
+
+.modals {
+  display: none;
+}
+
+.modal-overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  background-color: #fff;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.modal--visible {
+  display: block;
+}
+
+.modal-overlay--visible {
+opacity: 1;
+visibility: visible;
+transition: all 0.3s ease-in-out;
+}
+
+.modals--visible {
+  display: block;
+}
+
 .wrapper {
   width: 100vw;
   height: 100vh;
@@ -72,10 +127,7 @@ main {
   top: -48vh;
   left: 9vw;
   transform: rotate(-28deg);
-  display: block;
-  repeat: no-repeat 50% 50%;
-  animation: morphingRec t1 1.5s ease infinite;
-  animation-delay: -0.3s;
+  di splay: block;
   }
 
 /*.apple_sticker:hover {
@@ -90,8 +142,11 @@ opacity: 0;
   right: 0; */
 }
 
-.real_a pple {
+ .real_apple {
   opacity: 1;
+  repeat: no-repeat 50% 50%;
+  animation: morphingRect10 1.5s ease infinite;
+  animation-delay: -0.3s;
 }
 
 .web_apple {
@@ -103,6 +158,7 @@ opacity: 0;
 .web_apple:hover {
   opacity: 100;
 }
+
 .real_apple:hover img{
   opacity: 0;
 }
@@ -111,7 +167,7 @@ opacity: 0;
   opacity: 1;
 }*/
 
-  @keyframes morphingRect1 {
+  @keyframes morphingRect10 {
     0% {
         border-radius: 0%;
         width: 30vw;
@@ -158,13 +214,23 @@ opacity: 0;
 
 
 .blue_kiwi_sticker {
+  /* left: 29vw;
+  top: -43vh; */
+  position: absolute;
+  /* transform: rotate(13deg);
+  animation: morphingRect3 1.5s ease infinite;
+  animation-delay: -0.3s; */
+  }
+
+
+._kiwi_sticker img {
   left: 29vw;
   top: -43vh;
-  position: absolute;
   transform: rotate(13deg);
   animation: morphingRect3 1.5s ease infinite;
   animation-delay: -0.3s;
-  }
+}
+
 
   @keyframes morphingRect3 {
     0% {
@@ -184,6 +250,13 @@ opacity: 0;
     }
   }
 
+.link_kiwi {
+  left: 29vw;
+  top: -43vh;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
 
 .green_kiwi_sticker {
   position: absolute;
@@ -243,15 +316,21 @@ opacity: 0;
     }
   }
 
-  .imgBanana {
+  /* .imgBanana {
   /*width: 8vw;
-  height: 8vw;*/
+  height: 8vw;
   border-radius: 50%;
   margin: 0 auto;
   margin-top: 7%;
   display: none;
-  }
+  } */
 
+#click_stick {
+  opacity: 1;
+}
+#click_banana {
+  opacity: 0;
+}
 
 .vertical_banana_sticker {
    top: -12vh;
