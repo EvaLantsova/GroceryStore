@@ -15,6 +15,8 @@ html {
   background-image: url(../img/wallpaper.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: -1;
+
 }
 
 main {
@@ -51,18 +53,11 @@ main {
     }
 }
 
-#star_2 {
-height: 20vh;
-width: 20vw;
-display: none;
-position: absolute;
+.sticker_star {
+  position: relative;
 }
-
-#star_3 {
-height: 20vh;
-width: 20vw;
-display: none;
-position: absolute;
+.star {
+  position: absolute;
 }
 
 .wrapper {
@@ -72,6 +67,7 @@ position: absolute;
 
 .bills {
   position: absolute;
+  z-index: 1;
 }
 
 .pineapple {
@@ -80,6 +76,7 @@ position: absolute;
   wid th: 192vw;
   /* right: -118vw; */
   position: relative;
+
 }
 
 .mango {
@@ -135,6 +132,7 @@ main {
 
  .sticker_star {
    display: none;
+   z-index: 2;
  }
 
  .iphone_bills {
@@ -158,8 +156,9 @@ main {
     width: 165vw;
     top: -114vw;
     right: -74vw;
-    z-index: -1;
+    z-index: -5;
     position: absolute;
+    display: none;
 }
 
 .mango {
@@ -184,6 +183,8 @@ main {
   display: none;
 }
 
+.bills {
+  z-index: -2;
 }
 
 @me dia (max-width 680px) {
@@ -295,4 +296,18 @@ main {
     right: -2vw;
     transform: rotate (-1deg);
   }
+}
+
+#star_2 {
+  height: 20vh;
+  width: 20vw;
+  display: none;
+  position: absolute;
+}
+
+#star_3 {
+  height: 20vh;
+  width: 20vw;
+  display: none;
+  position: absolute;
 }
