@@ -24,7 +24,7 @@ main {
   /*background-size: contain;*/
   height: 100vh;
 }
-
+/*
 .blue__adress {
     transform: translate(11.5vw, 62vh);
 }
@@ -40,7 +40,7 @@ main {
     top: -23%;
     left: 56%;
     animation: rotate 8s linear infinite;
-}
+} */
 
 @keyframes rotate {
     0% {

@@ -1,4 +1,10 @@
 @import "reset.css";
+@font-face {
+  font-family: 'Input Sans';
+  src: url('../fonts/InputSans.ttf') format('tryetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -328,6 +334,7 @@ opacity: 0;
 #click_stick {
   opacity: 1;
 }
+
 #click_banana {
   opacity: 0;
 }
@@ -369,7 +376,7 @@ opacity: 0;
 }
 
 h2 {
-font-family: Input Sans;
+font-family: 'Input Sans';
 font-style: normal;
 font-weight: bold;
 font-size:  4vw;
@@ -408,7 +415,7 @@ opacity: ;
   }
 
 
-  .fond {
+  /* .fond {
    position:absolute;
    padding-top:45px;
    top:0;
@@ -473,4 +480,4 @@ opacity: ;
    bottom:0;
    right:0;
    left:0;
-  }
+  } */

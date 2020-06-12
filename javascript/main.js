@@ -4,7 +4,7 @@ let stickerStar = document.querySelector('.sticker_star')
 for (let i = 0; i < 10; i++) {
 	let newStarImg = document.createElement('img')
 	newStarImg.classList.add('star')
-	newStarImg.src = '../img/star1.svg'
+	newStarImg.src = '../img/star2.svg'
 	newStarImg.onclick = function() {
 	newStarImg.setAttribute('src', '../img/star2.svg');
 	}
@@ -21,7 +21,7 @@ stars.forEach(function(element) {
 
 let infiniteLoopAlternate = anime({
   targets: '.pineapple',
-  /*translateX: 250,
+  translateX: 250,
 	translateY: -250,
 	duration: 2000,
   direction: 'alternate',
@@ -40,18 +40,18 @@ document.getElementById('click_banana').style.opacity = '100%';
 
 
 
-const btns = document.querySelectorAll('.btn');
-const modalOverlay = document.querySelector('.modal-overlay');
-
-btns.forEach((el) => {
-  el.addEventListener('click',(e) => {
-    let path = e.currentTarget.getAttribute('data-path');
-    console.log('path');
-    document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible');
-    modalOverlay.classList.add('modal-overlay--visible');
-
-  });
-});
+// const btns = document.querySelectorAll('.btn');
+// const modalOverlay = document.querySelector('.modal-overlay');
+//
+// btns.forEach((el) => {
+//   el.addEventListener('click',(e) => {
+//     let path = e.currentTarget.getAttribute('data-path');
+//     console.log('path');
+//     document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible');
+//     modalOverlay.classList.add('modal-overlay--visible');
+//
+//   });
+// });
 
 
 // let btnMakeBananas = document.querySelector('.horizontal_banana_sticker')
