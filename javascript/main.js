@@ -3,6 +3,9 @@ document.getElementById('click_stick').onclick = function() {
 document.getElementById('click_banana').style.opacity = '100%';
 }
 
+document.querySelector('.green_kiwi_sticker').onclick = function() {
+  document.querySelector('.my-modal').classList.toggle('is-hidden')
+}
 
 
 // const btns = document.querySelectorAll('.btn');

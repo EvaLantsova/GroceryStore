@@ -55,6 +55,7 @@ main {
 
 .sticker_star {
   position: relative;
+  z-index: 2;
 }
 .star {
   position: absolute;
