@@ -36,9 +36,12 @@ main {
 .my-modal {
 position: fixed;
 background-color: #F7FAED;
-width: 50vw;
-height: 50vh;
+width: 40vw;
+height: 40vh;
 z-index: 10;
+border: 10px solid #000C5E;
+box-shadow: 0px 4px 15px #000000;
+border-radius: 27px;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
@@ -312,6 +315,11 @@ opacity: 0;
   }
 }
 
+#window_text {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 16vh;
+}
 
 .horizontal_banana_sticker {
     top: -24vh;
