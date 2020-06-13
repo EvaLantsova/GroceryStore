@@ -59,6 +59,8 @@ main {
 }
 .star {
   position: absolute;
+  top: 27vh;
+  left: 17vw;
 }
 
 .wrapper {
@@ -72,22 +74,21 @@ main {
 }
 
 .pineapple {
-  top: -77vw;
+  top: -75vw;
   height: 222vh;
   wid th: 192vw;
   /* right: -118vw; */
-  position: relative;
+  position: absolute;
 
 }
 
 .mango {
   height: 216vh;
   width: 88vw;
-  /* right: 26vw; */
-  top: -271vh;
-  left: -20vw;
+  left: -29vw;
+  top: -22vh;
   z-index: -1;
-  position: relative;
+  position: absolute;
 }
 
 .kiwi {

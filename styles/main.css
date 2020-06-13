@@ -153,7 +153,7 @@ transition: all 0.3s ease-in-out;
 
 .apple_sticker {
   position: absolute;
-  top: -48vh;
+  top: -35vh;
   left: 9vw;
   transform: rotate(-28deg);
   di splay: block;
@@ -216,7 +216,7 @@ opacity: 0;
 
 .pineapple_sticker {
   position: absolute;
-  top: -39vh;
+  top: -33vh;
   left: 11vw;
   transform: rotate(15deg);
   animation: morphingRect0 1.5s ease infinite;
@@ -246,7 +246,7 @@ opacity: 0;
   /* left: 29vw;
   top: -43vh; */
   position: absolute;
-  top: -70vh;
+  top: -55vh;
   left: 60vw;
   transform: rotate(13deg);
   animation: morphingRect3 1.5s ease infinite;
@@ -291,7 +291,7 @@ opacity: 0;
 
 .green_kiwi_sticker {
   position: absolute;
-  top: -37vh;
+  top: -33vh;
   left: 4vw;
   animation: morphingRect4 1.5s ease infinite;
   animation-delay: -0.3s;
@@ -322,7 +322,7 @@ opacity: 0;
 }
 
 .horizontal_banana_sticker {
-    top: -24vh;
+    top: -18vh;
     left: 3vw;
     position: absolute;
     text-align: center;
