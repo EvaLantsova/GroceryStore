@@ -315,10 +315,11 @@ opacity: 0;
   }
 }
 
-#window_text {
-  font-size: 30px;
-  text-align: center;
-  margin-top: 16vh;
+.window_text {
+    font-size: 30px;
+    padding: 70px;
+    text-align: center;
+
 }
 
 .horizontal_banana_sticker {
